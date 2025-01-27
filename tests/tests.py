@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Importaciones desde MyAdventures
 import MyAdventures.mcpi.minecraft as Minecraft
-import MyAdventures.practicaTAP.framework.base_bot as base_bot
+from MyAdventures.practicaTAP.framework.base_bot import Bot
 import MyAdventures.practicaTAP.server
 import MyAdventures.practicaTAP.client
 import MyAdventures.practicaTAP.main

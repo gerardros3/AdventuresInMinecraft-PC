@@ -1,6 +1,44 @@
-[00:43:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 696982ms behind, skipping 13939 tick(s)
-[10:15:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 34298151ms behind, skipping 685963 tick(s)
-[11:33:59] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4685320ms behind, skipping 93706 tick(s)
-[18:27:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 18568786ms behind, skipping 371375 tick(s)
-[19:21:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5032ms behind, skipping 100 tick(s)
-[21:17:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2019324ms behind, skipping 40386 tick(s)
+[20:39:40] [Server thread/INFO]: Loading properties
+[20:39:40] [Server thread/INFO]: Default game type: CREATIVE
+[20:39:40] [Server thread/INFO]: Generating keypair
+[20:39:40] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:39:40] [Server thread/INFO]: Using default channel type
+[20:39:40] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[20:39:41] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.10
+[20:39:41] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:39:41] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:39:41] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:39:41] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:39:41] [Server thread/INFO]: Preparing level "world"
+[20:39:41] [Server thread/INFO]: Preparing start region for level 0 (Seed: 4524677142864168952)
+[20:39:41] [Server thread/INFO]: Preparing start region for level 1 (Seed: 4524677142864168952)
+[20:39:42] [Server thread/INFO]: Preparing start region for level 2 (Seed: 4524677142864168952)
+[20:39:42] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.10
+[20:39:42] [Server thread/INFO]: [RaspberryJuice] Using port 4711
+[20:39:42] [Server thread/INFO]: [RaspberryJuice] Using ABSOLUTE locations
+[20:39:42] [Server thread/INFO]: [RaspberryJuice] Using BOTH clicks for hits
+[20:39:42] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[20:39:42] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:39:42] [Server thread/INFO]: Done (1,411s)! For help, type "help" or "?"
+[21:09:42] [Server thread/WARN]: The save is being accessed from another location, aborting
+[21:09:42] [Server thread/WARN]: The save is being accessed from another location, aborting
+[21:09:42] [Server thread/WARN]: The save is being accessed from another location, aborting
+[21:09:49] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
+[21:09:49] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57962.
+[21:09:49] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
+[21:09:49] [Server thread/WARN]: [RaspberryJuice] Error occured handling command
+[21:09:49] [Server thread/WARN]: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+[21:09:49] [Server thread/WARN]: 	at java.lang.AbstractStringBuilder.deleteCharAt(Unknown Source)
+[21:09:49] [Server thread/WARN]: 	at java.lang.StringBuilder.deleteCharAt(Unknown Source)
+[21:09:49] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession.handleCommand(RemoteSession.java:181)
+[21:09:49] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession.handleLine(RemoteSession.java:133)
+[21:09:49] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession.tick(RemoteSession.java:113)
+[21:09:49] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RaspberryJuicePlugin$TickHandler.run(RaspberryJuicePlugin.java:197)
+[21:09:49] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:53)
+[21:09:49] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
+[21:09:49] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:689)
+[21:09:49] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:366)
+[21:09:49] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:650)
+[21:09:49] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:554)
+[21:09:49] [Server thread/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[21:09:49] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57962.
