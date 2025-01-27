@@ -1,19 +1,24 @@
-from mcpi.minecraft import Minecraft
-from mcpi import block
+from framework.base_bot import Bot
+import mcpi.entity as entities
+import random
 import time
-from framework.base_bot import BaseBot
+from threading import Thread
 
-mc = Minecraft.create()
-
-class TNTBot(BaseBot):
-    def __init__(self, mc):
-        self.mc = mc
-
-    def place_tnt(self, x, y, z):
-        self.mc.setBlock(x, y, z, block.TNT.id, 1)  # Place TNT block
-        time.sleep(2)
-        self.mc.setBlock(x, y, z, block.AIR.id)  # Ignite TNT
-
-# Example usage
-tnt_bot = TNTBot(mc)
-tnt_bot.place_tnt(10, 10, 10)
+class TntBOT(Bot):
+    def __init__(self, entity):
+        super().__init__(entity)  # inherit attributes
+        self.name = "TntBot"    # name of this specific bot
+        self.t1 = Thread(target=self._main) # update thread with the function to execute
+        self.counter = 0
+        
+    # specific function of the TNT bot
+    def _main(self):
+        while(self.control):    # run while the bot is enabled
+            if self.counter > 0:
+                time.sleep(1)
+                self.counter = self.counter - 1
+            else:
+                self.counter = random.randint(3, 15)
+                # spawn TNT once in a random interval between 3 and 15 seconds
+                pos = self.mc.entity.getTilePos(self.entity)    # Get player position
+                self.mc.spawnEntity(pos.x, pos.y+2, pos.z, entities.PRIMED_TNT.id)   # Spawn an ignited TNT on top of the player
