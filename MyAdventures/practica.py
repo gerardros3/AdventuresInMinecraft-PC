@@ -1,8 +1,10 @@
 import mcpi.minecraft as game
-import botclass as bots
+import framework.bot_manager as bot_manager
+import bots.tnt_bot as TNT
+import bots.chat_bot as ChatBOT
+import bots.insult_bot as Insult
 
 # Instanciar el BotManager Singleton
-bot_manager = bots.BotManager.getInstance()
 print(bot_manager)
 
 mc = game.Minecraft.create()    # Connect to the Minecraft game
@@ -22,11 +24,11 @@ def disableBot(player, bot_type):
     bot_list[player].stop()
     del bot_list[player]
     if bot_type == 'TNT'.casefold():
-        bot_list[player] = bots.TNT(player)
-    elif bot_type == 'ChatAI'.casefold():
-        bot_list[player] = bots.ChatAI(player)
+        bot_list[player] = TNT(player)
+    elif bot_type == 'ChatBOT'.casefold():
+        bot_list[player] = ChatBOT(player)
     elif bot_type == 'Insult'.casefold():
-        bot_list[player] = bots.Insult(player)
+        bot_list[player] = Insult(player)
 
 
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -63,10 +65,10 @@ while(Script):
             disableBot(player, 'TNT'.casefold())
             
         elif (text.casefold() == ":enableGPT".casefold()):
-            enableBot(player, 'ChatAI'.casefold())
+            enableBot(player, 'chatBOT'.casefold())
             
         elif (text.casefold() == ":disableGPT".casefold()):
-            disableBot(player, 'ChatAI'.casefold())
+            disableBot(player, 'chatBOT'.casefold())
 
         elif (text.casefold() == ":enableInsult".casefold()):
             enableBot(player, 'Insult'.casefold())
@@ -76,7 +78,7 @@ while(Script):
             
         elif (text.casefold() == ":endProgram".casefold()):
             # Detener todos los bots y terminar el programa
-            for bot_type in ['TNT'.casefold(), 'ChatAI'.casefold(), 'Insult'.casefold()]:
+            for bot_type in ['TNT'.casefold(), 'chatBOT'.casefold(), 'Insult'.casefold()]:
                 bot_list = bot_manager.get_bot_list(bot_type)
                 list(map(stop_bot, bot_list.values()))
             Script = 0  # Command to finish the execution of this program
