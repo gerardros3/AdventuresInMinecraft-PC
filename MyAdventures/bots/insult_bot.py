@@ -3,7 +3,6 @@ from threading import Thread
 import random
 
 
-
 class Insult(Bot):
     def __init__(self, entity):
         super().__init__(entity)

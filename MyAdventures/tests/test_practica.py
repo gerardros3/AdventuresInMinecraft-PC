@@ -16,7 +16,7 @@ class TestBots(unittest.TestCase):
         self.mc_mock.entity.getName.return_value = "TestPlayer"
         self.mc_mock.getPlayerEntityIds.return_value = [self.player_mock]
 
-    @patch('base_bot.game.Minecraft.create')
+    @patch('framework.base_bot.game.Minecraft.create')
     def test_tnt_bot_activation(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -26,7 +26,7 @@ class TestBots(unittest.TestCase):
         bot.mc.postToChat.assert_called_with("§2<TNTBot> ***The bot has been enabled for TestPlayer!!")
         bot.stop()
 
-    @patch('base_bot.game.Minecraft.create')
+    @patch('framwork.base_bot.game.Minecraft.create')
     def test_tnt_bot_stop(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 

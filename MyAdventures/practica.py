@@ -1,10 +1,11 @@
 import mcpi.minecraft as game
-import framework.bot_manager as bot_manager
+import framework.bot_manager as BotManager
 import bots.tnt_bot as TNT
 import bots.chat_bot as ChatBOT
 import bots.insult_bot as Insult
 
 # Instanciar el BotManager Singleton
+bot_manager = BotManager.bot_manager.getInstance()
 print(bot_manager)
 
 mc = game.Minecraft.create()    # Connect to the Minecraft game
