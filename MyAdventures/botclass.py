@@ -1,3 +1,4 @@
+from email.policy import default
 import mcpi.minecraft as game
 import mcpi.block as blocks
 import mcpi.entity as entities
@@ -196,24 +197,18 @@ class BotManager:
             self.printLists()
             
             
-            # Usar map() con una lambda para crear las listas de bots por tipo
-            #self.tnt_bot_list = dict(map(lambda entity: (entity, TNT(entity)), self.player_list))
-            #self.chat_ai_bot_list = dict(map(lambda entity: (entity, ChatAI(entity)), self.player_list))
-            #self.insult_bot_list = dict(map(lambda entity: (entity, Insult(entity)), self.player_list))
-
     
     def get_bot_list(self, bot_type):
         """Obtiene la lista de bots del tipo especificado."""
         
         print(f"Received bot type: {bot_type}")
-        if bot_type == 'TNT'.casefold():
-            return self.tnt_bot_list
-        elif bot_type == 'ChatAI'.casefold():
-            return self.chat_ai_bot_list
-        elif bot_type == 'Insult'.casefold():
-            return self.insult_bot_list
-        else:
-            raise ValueError("Invalid bot type")
+        switcher = {
+            'TNT'.casefold(): self.tnt_bot_list,
+            'ChatAI'.casefold(): self.chat_ai_bot_list,
+            'Insult'.casefold(): self.insult_bot_list
+        }
+        return switcher.get(bot_type.casefold(), None)
+
     
     
     def printLists(self):

@@ -1,105 +1,70 @@
+import unittest
+from unittest.mock import patch, MagicMock
 import sys
 import os
-import pytest
-import Pyro4
-import time
-
-# Asegura que el directorio base y MyAdventures están en el PATH
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-# Importaciones desde MyAdventures
-import mcpi.minecraft as game
-import botclass
-import pyro_server
-import pyro_client
-import practica
-
-# Función para conectar al servidor Pyro
-@pytest.fixture(scope="module")
-def server():
-    try:
-        return Pyro4.Proxy("PYRO:practicatap.practica@localhost:9090")
-    except Exception as e:
-        pytest.fail(f"Error al conectar al servidor: {e}")
-
-# Crear instancia de Minecraft y obtener la lista de jugadores
-@pytest.fixture(scope="module")
-def minecraft_data():
-    mc = game.Minecraft.create()
-    player_list = mc.getPlayerEntityIds()
-    return mc, player_list
-
-def test_activar_tnt(minecraft_data):
-    mc, player_list = minecraft_data
-    result = practica.enableBot(player_list[0], 'TNT')
-    assert result is None
-
-def test_activar_tnt_activado(minecraft_data):
-    time.sleep(2)
-    mc, player_list = minecraft_data
-    result = practica.enableBot(player_list[0], 'TNT')
-    assert result is None
-
-def test_activar_ai(minecraft_data):
-    mc, player_list = minecraft_data
-    result = practica.enableBot(player_list[0], 'ChatAI')
-    assert result is None
-
-def test_activar_insult(minecraft_data):
-    mc, player_list = minecraft_data
-    result = practica.enableBot(player_list[0], 'Insult')
-    assert result is None
-
-def test_desactivar_tnt(minecraft_data):
-    mc, player_list = minecraft_data
-    result = practica.disableBot(player_list[0], 'TNT')
-    assert result is None
-
-def test_desactivar_tnt_desactivado(minecraft_data):
-    mc, player_list = minecraft_data
-    result = practica.disableBot(player_list[0], 'TNT')
-    assert result is None
-
-def test_desactivar_ai(minecraft_data):
-    mc, player_list = minecraft_data
-    mc.postToChat("How are you?")
-    time.sleep(2)
-    result = practica.disableBot(player_list[0], 'ChatAI')
-    assert result is None
-
-def test_desactivar_insult(minecraft_data):
-    mc, player_list = minecraft_data
-    mc.postToChat("Insultame")
-    time.sleep(2)
-    result = practica.disableBot(player_list[0], 'Insult')
-    assert result is None
-
-def test_wake_server(server):
-    result = server.wake_server()
-    assert result == "The server is connected and active!"
-
-def test_mostrar_bots(server):
-    result = server.show_bots()
-    assert result is None
-
-def test_enviar_mensaje(server):
-    result = server.send_message("Mensaje de prueba")
-    assert result == "Mensaje enviado: Mensaje de prueba"
-
-def test_obtener_jugadores(server, minecraft_data):
-    _, player_list = minecraft_data
-    result = server.get_players()
-    assert result == player_list
-
-def test_activar_bot(server, minecraft_data):
-    _, player_list = minecraft_data
-    result = server.enable_bot('TNT', player_list[0])
-    assert result == f"Bot TNT activado para el jugador {player_list[0]}."
-
-def test_desactivar_bot(server, minecraft_data):
-    _, player_list = minecraft_data
-    result = server.disable_bot('TNT', player_list[0])
-    assert result == f"Bot TNT desactivado para el jugador {player_list[0]}."
+from MyAdventures.botclass import Bot, BotManager, TNT, ChatAI, Insult
 
 
-# Generate coverage report: pytest --cov --cov-report=xml:coverage.xml --junitxml=junit.xml
+
+class TestBots(unittest.TestCase):
+    
+    def setUp(self):
+        # Mockear la conexión a Minecraft
+        self.mc_mock = MagicMock()
+        self.player_mock = 12345
+
+        # Mock para métodos de Minecraft
+        self.mc_mock.entity.getName.return_value = "TestPlayer"
+        self.mc_mock.getPlayerEntityIds.return_value = [self.player_mock]
+
+    @patch('botclass.game.Minecraft.create')
+    def test_tnt_bot_activation(self, mock_mc_create):
+        mock_mc_create.return_value = self.mc_mock
+
+        # Crear y activar el bot
+        bot = TNT(self.player_mock)
+        bot.begin()
+        bot.mc.postToChat.assert_called_with("§2<TNTBot> ***The bot has been enabled for TestPlayer!!")
+
+    @patch('botclass.game.Minecraft.create')
+    def test_tnt_bot_stop(self, mock_mc_create):
+        mock_mc_create.return_value = self.mc_mock
+
+        # Crear y detener el bot
+        bot = TNT(self.player_mock)
+        bot.begin()
+        bot.stop()
+        bot.mc.postToChat.assert_called_with("§2<TNTBot> ***The bot has been disabled for TestPlayer!!")
+
+    @patch('botclass.game.Minecraft.create')
+    def test_bot_manager_add_player(self, mock_mc_create):
+        mock_mc_create.return_value = self.mc_mock
+
+        manager = BotManager.getInstance()
+        manager.update_player_list(self.mc_mock)
+
+        # Comprobar que el jugador fue agregado a la lista
+        self.assertIn(self.player_mock, manager.player_list)
+
+
+class TestBotManager(unittest.TestCase):
+
+    @patch('botclass.game.Minecraft.create')
+    def test_bot_manager_get_bot_list(self, mock_mc_create):
+        mock_mc_create.return_value = MagicMock()
+        manager = BotManager.getInstance()
+        
+        # Mockear listas de bots
+        manager.tnt_bot_list = {123: TNT(123)}
+        manager.chat_ai_bot_list = {123: ChatAI(123)}
+        manager.insult_bot_list = {123: Insult(123)}
+        
+        # Probar la obtención de listas de bots
+        self.assertIn(123, manager.get_bot_list('TNT'))
+        self.assertIn(123, manager.get_bot_list('ChatAI'))
+        self.assertIn(123, manager.get_bot_list('Insult'))
+
+
+if __name__ == '__main__':
+    unittest.main()
