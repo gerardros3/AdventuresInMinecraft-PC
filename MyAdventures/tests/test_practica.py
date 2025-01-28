@@ -1,6 +1,9 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from botclass import Bot, BotManager, TNT, ChatAI, Insult
+from framework.bot_manager import bot_manager as BotManager
+from bots.tnt_bot import TNT
+from bots.chat_bot import ChatBOT
+from bots.insult_bot import Insult
 
 class TestBots(unittest.TestCase):
     
@@ -13,7 +16,7 @@ class TestBots(unittest.TestCase):
         self.mc_mock.entity.getName.return_value = "TestPlayer"
         self.mc_mock.getPlayerEntityIds.return_value = [self.player_mock]
 
-    @patch('botclass.game.Minecraft.create')
+    @patch('base_bot.game.Minecraft.create')
     def test_tnt_bot_activation(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -23,7 +26,7 @@ class TestBots(unittest.TestCase):
         bot.mc.postToChat.assert_called_with("§2<TNTBot> ***The bot has been enabled for TestPlayer!!")
         bot.stop()
 
-    @patch('botclass.game.Minecraft.create')
+    @patch('base_bot.game.Minecraft.create')
     def test_tnt_bot_stop(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -33,27 +36,27 @@ class TestBots(unittest.TestCase):
         bot.stop()
         bot.mc.postToChat.assert_called_with("§2<TNTBot> ***The bot has been disabled for TestPlayer!!")
 
-    @patch('botclass.game.Minecraft.create')
-    def test_chatai_bot_activation(self, mock_mc_create):
+    @patch('base_bot.game.Minecraft.create')
+    def test_ChatBOT_bot_activation(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
         # Crear y activar el bot
-        bot = ChatAI(self.player_mock)
+        bot = ChatBOT(self.player_mock)
         bot.begin()
-        bot.mc.postToChat.assert_called_with("§2<ChatAI> ***The bot has been enabled for TestPlayer!!")
+        bot.mc.postToChat.assert_called_with("§2<ChatBOT> ***The bot has been enabled for TestPlayer!!")
         bot.stop()
 
-    @patch('botclass.game.Minecraft.create')
-    def test_chatai_bot_stop(self, mock_mc_create):
+    @patch('base_bot.game.Minecraft.create')
+    def test_ChatBOT_bot_stop(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
         # Crear y detener el bot
-        bot = ChatAI(self.player_mock)
+        bot = ChatBOT(self.player_mock)
         bot.begin()
         bot.stop()
-        bot.mc.postToChat.assert_called_with("§2<ChatAI> ***The bot has been disabled for TestPlayer!!")
+        bot.mc.postToChat.assert_called_with("§2<ChatBOT> ***The bot has been disabled for TestPlayer!!")
 
-    @patch('botclass.game.Minecraft.create')
+    @patch('base_bot.game.Minecraft.create')
     def test_insult_bot_activation(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -63,7 +66,7 @@ class TestBots(unittest.TestCase):
         bot.mc.postToChat.assert_called_with("§2<InsultBot> ***The bot has been enabled for TestPlayer!!")
         bot.stop()
 
-    @patch('botclass.game.Minecraft.create')
+    @patch('base_bot.game.Minecraft.create')
     def test_insult_bot_stop(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -73,7 +76,7 @@ class TestBots(unittest.TestCase):
         bot.stop()
         bot.mc.postToChat.assert_called_with("§2<InsultBot> ***The bot has been disabled for TestPlayer!!")
 
-    @patch('botclass.game.Minecraft.create')
+    @patch('base_bot.game.Minecraft.create')
     def test_bot_manager_add_player(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -85,19 +88,19 @@ class TestBots(unittest.TestCase):
 
 class TestBotManager(unittest.TestCase):
 
-    @patch('botclass.game.Minecraft.create')
+    @patch('base_bot.game.Minecraft.create')
     def test_bot_manager_get_bot_list(self, mock_mc_create):
         mock_mc_create.return_value = MagicMock()
         manager = BotManager.getInstance()
         
         # Mockear listas de bots
         manager.tnt_bot_list = {123: TNT(123)}
-        manager.chat_ai_bot_list = {123: ChatAI(123)}
+        manager.chat_ai_bot_list = {123: ChatBOT(123)}
         manager.insult_bot_list = {123: Insult(123)}
         
         # Probar la obtención de listas de bots
         self.assertIn(123, manager.get_bot_list('TNT'))
-        self.assertIn(123, manager.get_bot_list('ChatAI'))
+        self.assertIn(123, manager.get_bot_list('ChatBOT'))
         self.assertIn(123, manager.get_bot_list('Insult'))
 
 if __name__ == '__main__':

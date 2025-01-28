@@ -1,13 +1,15 @@
-from baseBot import Bot
-import mcpi.entity as entities
 import random
 import time
+import mcpi.entity as entities
 from threading import Thread
+from framework.base_bot import Bot
 
-class TntBOT(Bot):
+
+# specific bot class to spawn TNT near the player
+class TNT(Bot):
     def __init__(self, entity):
         super().__init__(entity)  # inherit attributes
-        self.name = "TntBOT"    # name of this specific bot
+        self.name = "TNTBot"    # name of this specific bot
         self.t1 = Thread(target=self._main) # update thread with the function to execute
         self.counter = 0
         

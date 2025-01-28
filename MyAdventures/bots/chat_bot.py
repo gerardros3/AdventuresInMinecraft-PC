@@ -1,40 +1,50 @@
-from read_chat import *
-from baseBot import Bot, generate_response
+from framework.read_chat import *
+from framework.base_bot import Bot
 from threading import Thread
-from dotenv import dotenv_values
 
-# Main ChatAI Bot Class
+
+# Main ChatBOT Bot Class
 class ChatBOT(Bot):
-    def __init__(self, entity):
+       def __init__(self, entity):
         super().__init__(entity)
-        self.name = "ChatBot"  # Name of the bot
+        self.name = "ChatBOT"  # Name of the bot
         self.t1 = Thread(target=self._main)  # Update thread with the function to execute
-        # HugChat setup
-        try:
-            secrets = dotenv_values('C:\\users\\stef2\\Desktop\\Minecraft-agent-framework\\MyAdventures\\hf.env')
-            self.hf_email = secrets['EMAIL']
-            self.hf_pass = secrets['PASS']
-        except Exception as e:
-            print(f"§2Error loading HugChat credentials: {e}")
+        self.bot_entity_id = self.t1.name
+        self.player_name = self.mc.entity.getName(self.entity)
 
-    # Main function for the ChatAI bot (to process commands)
-    def _main(self):
-        while self.control:
-            chatEvents = self.mc.events.pollChatPosts()
-    
-            for command in chatEvents:
-                text = str(command.message) # Convert chat event to str
-                if(not text.startswith(":gpt ")):   # Skip if it doesn't start with ":gpt"
-                    continue
-                else:
-                    text = text[4:]
-                    self.handle_gpt_command(text + "  ")
+    # Main function for the ChatBOT bot (to process commands)
+        def _main(self):
+            while self.control:
+                chatEvents = self.mc.events.pollChatPosts()
+        
+                for command in chatEvents:
+                    text = str(command.message) # Convert chat event to str
+                    sender_entity_id = command.entityId
+                    if sender_entity_id == self.bot_entity_id:
+                        continue
+                    
+                    if text.endswith("?"):
+                        self.answer_question(text)
 
-    # Function to handle GPT prompts
-    def handle_gpt_command(self, prompt):
-        try:
-            response = generate_response(prompt, self.hf_email, self.hf_pass)
-            self.mc.postToChat(f"<GPT> {response}")  # Limit response length
-            #response.close();
-        except Exception as e:
-            self.mc.postToChat(f"<GPT> Error: {str(e)}")
+        # Function to handle GPT prompts
+        def answer_question(self, question):
+            answers = {
+                "What is your name?": "I am OracleBot.",
+                "What is the meaning of life?": "Beer",
+                "How are you?": "I am just a bot, but I am functioning properly.",
+                "What is the best programming language?": "Python",
+                "What is the best game?": "Minecraft",
+                "What is the best food?": "Pizza",
+                "What is the best color?": "Blue",
+                "What is the best animal?": "Dog",
+                "What is the best movie?": "The Matrix",
+                "What is the best book?": "The Lord of the Rings",
+                "What is the best music?": "Rock music",
+                "What is the best sport?": "Soccer",
+                "What is the best holiday?": "Christmas",
+                "What is the best season?": "Summer",
+                "What is the best weather?": "Sunny",
+                "Who are the best teachers?": "Usama, Pedro and Alberto",
+            }
+            answer = answers.get(question, "I don't know the answer to that.")
+            self.mc.postToChat(f"<ChatBot> {answer}")
