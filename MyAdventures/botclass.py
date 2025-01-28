@@ -5,10 +5,6 @@ import mcpi.event as events
 import random
 import time
 from threading import Thread
-from dotenv import dotenv_values
-from hugchat import hugchat
-from hugchat.login import Login
-
 
 # main abstract class for a bot
 class Bot():

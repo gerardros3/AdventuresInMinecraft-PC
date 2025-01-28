@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="497.755" timestamp="2025-01-28T12:59:59.783323+01:00" hostname="Gerard"><testcase classname="" name="test_practica" time="0.000"><error message="collection failure">test_practica.py:15: in &lt;module&gt;
+    import practica
+..\practica.py:46: in &lt;module&gt;
+    bot_manager.update_player_list(mc)
+..\botclass.py:174: in update_player_list
+    new_player_list = mc.getPlayerEntityIds()
+..\mcpi\minecraft.py:331: in getPlayerEntityIds
+    ids = self.conn.sendReceive(b"world.getPlayerIds")
+..\mcpi\connection.py:62: in sendReceive
+    return self.receive()
+..\mcpi\connection.py:54: in receive
+    s = self.socket.makefile("r").readline().rstrip("\n")
+C:\Python313\Lib\socket.py:719: in readinto
+    return self._sock.recv_into(b)
+E   ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto</error></testcase></testsuite></testsuites>

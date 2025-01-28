@@ -62,7 +62,7 @@ def test_desactivar_tnt_desactivado(minecraft_data):
 
 def test_desactivar_ai(minecraft_data):
     mc, player_list = minecraft_data
-    mc.postToChat(":gpt Hi")
+    mc.postToChat("How are you?")
     time.sleep(2)
     result = practica.disableBot(player_list[0], 'ChatAI')
     assert result is None
