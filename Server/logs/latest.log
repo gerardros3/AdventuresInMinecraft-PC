@@ -1,104 +1,26 @@
-[15:48:53] [Server thread/INFO]: Starting minecraft server version 1.12
-[15:48:53] [Server thread/INFO]: Loading properties
-[15:48:53] [Server thread/INFO]: Default game type: SURVIVAL
-[15:48:53] [Server thread/INFO]: Generating keypair
-[15:48:53] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:48:53] [Server thread/INFO]: Using default channel type
-[15:48:54] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
-[15:48:54] [Server thread/ERROR]: Ambiguous plugin name `RaspberryJuice' for files `plugins\raspberryjuice-1.12.1.jar' and `plugins\raspberryjuice-1.10.jar' in `plugins'
-[15:48:54] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.12.1
-[15:48:54] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[15:48:54] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[15:48:54] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[15:48:54] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[15:48:54] [Server thread/INFO]: Preparing level "world"
-[15:48:54] [Server thread/INFO]: Preparing start region for level 0 (Seed: 1860072845092772542)
-[15:48:55] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1860072845092772542)
-[15:48:56] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1860072845092772542)
-[15:48:56] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1
-[15:48:56] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
-[15:48:56] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
-[15:48:56] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
-[15:48:56] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[15:48:56] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[15:48:56] [Server thread/INFO]: Done (1,841s)! For help, type "help" or "?"
-[15:49:08] [Server thread/INFO]: Welcome gerrofu3[m
-[15:49:08] [Server thread/INFO]: gerrofu3[/127.0.0.1:65508] logged in with entity id 84 at ([world]177.55284459470195, 81.63915155197866, 269.4962625188252)
-[15:49:18] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
-[15:49:18] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:65509.
-[15:49:18] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
-[15:49:18] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:65510.
-[15:49:18] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
-[15:49:18] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
-[15:49:18] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:65511.
-[15:49:18] [Thread-11/INFO]: [RaspberryJuice] Starting input thread
-[15:49:18] [Thread-12/INFO]: [RaspberryJuice] Starting output thread!
-[15:49:18] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:65512.
-[15:49:18] [Thread-13/INFO]: [RaspberryJuice] Starting input thread
-[15:49:18] [Thread-14/INFO]: [RaspberryJuice] Starting output thread!
-[15:49:18] [Server thread/INFO]: [0;32;1m<MAIN> ***Main program has started!![m
-[15:49:32] [Netty Server IO #1/INFO]: <gerrofu3> :enableInsult[m
-[15:49:34] [Netty Server IO #1/INFO]: <gerrofu3> akfa[m
-[15:49:34] [Server thread/INFO]: <InsultBot> I've seen smarter rocks.[m
-[15:49:40] [Netty Server IO #1/INFO]: <gerrofu3> :enableGPT[m
-[15:49:44] [Netty Server IO #1/INFO]: <gerrofu3> How are you[m
-[15:49:45] [Server thread/INFO]: <InsultBot> You're not the dumbest person in the world, but you better hope they don't die.[m
-[15:49:52] [Netty Server IO #1/INFO]: <gerrofu3> How are you?[m
-[15:51:13] [Netty Server IO #1/INFO]: <gerrofu3> :disableInsult[m
-[15:51:15] [Netty Server IO #1/INFO]: <gerrofu3> masddlfas[m
-[15:51:21] [Netty Server IO #1/INFO]: <gerrofu3> :enableGPT[m
-[15:51:26] [Netty Server IO #1/INFO]: <gerrofu3> How are you?[m
-[15:51:37] [Netty Server IO #1/INFO]: <gerrofu3> :enableTNT[m
-[15:51:45] [Netty Server IO #1/INFO]: <gerrofu3> dafjsdç[m
-[15:51:49] [Netty Server IO #1/INFO]: <gerrofu3> :enableInsult[m
-[15:51:51] [Netty Server IO #1/INFO]: <gerrofu3> asfas[m
-[16:07:04] [Thread-7/INFO]: [RaspberryJuice] Connection reset
-[16:07:04] [Thread-11/INFO]: [RaspberryJuice] Connection reset
-[16:07:04] [Thread-13/INFO]: [RaspberryJuice] Connection reset
-[16:07:04] [Thread-9/INFO]: [RaspberryJuice] Connection reset
-[16:07:04] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:65509.
-[16:07:04] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:65510.
-[16:07:04] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:65511.
-[16:07:04] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:65512.
-[16:07:10] [Server thread/INFO]: gerrofu3 lost connection: Disconnected
-[16:07:10] [Server thread/INFO]: gerrofu3 left the game
-[16:07:20] [Server thread/INFO]: Welcome gerrofu3[m
-[16:07:20] [Server thread/INFO]: gerrofu3[/127.0.0.1:49340] logged in with entity id 9879 at ([world]176.93213874991267, 77.89478583070557, 270.9620804628679)
-[16:07:24] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49341.
-[16:07:24] [Thread-15/INFO]: [RaspberryJuice] Starting input thread
-[16:07:24] [Thread-16/INFO]: [RaspberryJuice] Starting output thread!
-[16:07:24] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49342.
-[16:07:24] [Thread-18/INFO]: [RaspberryJuice] Starting output thread!
-[16:07:24] [Thread-17/INFO]: [RaspberryJuice] Starting input thread
-[16:07:24] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49343.
-[16:07:24] [Thread-19/INFO]: [RaspberryJuice] Starting input thread
-[16:07:24] [Thread-20/INFO]: [RaspberryJuice] Starting output thread!
-[16:07:24] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49344.
-[16:07:24] [Thread-22/INFO]: [RaspberryJuice] Starting output thread!
-[16:07:24] [Thread-21/INFO]: [RaspberryJuice] Starting input thread
-[16:07:25] [Server thread/INFO]: [0;32;1m<MAIN> ***Main program has started!![m
-[16:07:31] [Netty Server IO #3/INFO]: <gerrofu3> :enableTNT[m
-[16:07:31] [Server thread/INFO]: [0;32;22m<TNTBot> ***The bot has been enabled for gerrofu3!![m
-[16:07:37] [Netty Server IO #3/INFO]: <gerrofu3> :disableTNT[m
-[16:07:37] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49352.
-[16:07:37] [Thread-23/INFO]: [RaspberryJuice] Starting input thread
-[16:07:37] [Thread-24/INFO]: [RaspberryJuice] Starting output thread!
-[16:07:37] [Server thread/INFO]: [0;32;22m<TNTBot> ***The bot has been disabled for gerrofu3!![m
-[16:07:38] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49342.
-[16:07:44] [Netty Server IO #3/INFO]: <gerrofu3> :enableGPT[m
-[16:07:44] [Server thread/INFO]: [0;32;22m<ChatAI> ***The bot has been enabled for gerrofu3!![m
-[16:07:52] [Netty Server IO #3/INFO]: <gerrofu3> How are you?[m
-[16:07:52] [Server thread/INFO]: <ChatBot> I am just a bot, but I am functioning properly.[m
-[16:08:00] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
-[16:08:01] [Server thread/INFO]: [0;32;22m<InsultBot> ***The bot has been enabled for gerrofu3!![m
-[16:08:01] [Server thread/INFO]: <InsultBot> I've seen smarter rocks.[m
-[16:08:06] [Netty Server IO #3/INFO]: <gerrofu3> jkasdfks[m
-[16:08:06] [Server thread/INFO]: <InsultBot> You're as bright as a black hole![m
-[16:08:36] [Thread-23/INFO]: [RaspberryJuice] Connection reset
-[16:08:36] [Thread-21/INFO]: [RaspberryJuice] Connection reset
-[16:08:36] [Thread-19/INFO]: [RaspberryJuice] Connection reset
-[16:08:36] [Thread-15/INFO]: [RaspberryJuice] Connection reset
-[16:08:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49341.
-[16:08:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49343.
-[16:08:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49344.
-[16:08:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49352.
+[17:06:47] [Server thread/INFO]: Starting minecraft server version 1.12
+[17:06:47] [Server thread/INFO]: Loading properties
+[17:06:47] [Server thread/INFO]: Default game type: SURVIVAL
+[17:06:47] [Server thread/INFO]: Generating keypair
+[17:06:48] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:06:48] [Server thread/INFO]: Using default channel type
+[17:06:48] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[17:06:48] [Server thread/ERROR]: Ambiguous plugin name `RaspberryJuice' for files `plugins\raspberryjuice-1.12.1.jar' and `plugins\raspberryjuice-1.10.jar' in `plugins'
+[17:06:48] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.12.1
+[17:06:48] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:06:48] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:06:48] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:06:48] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:06:48] [Server thread/INFO]: Preparing level "world"
+[17:06:48] [Server thread/INFO]: Preparing start region for level 0 (Seed: 1860072845092772542)
+[17:06:49] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1860072845092772542)
+[17:06:50] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1860072845092772542)
+[17:06:50] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1
+[17:06:50] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[17:06:50] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[17:06:50] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[17:06:50] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[17:06:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:06:50] [Server thread/INFO]: Done (1,789s)! For help, type "help" or "?"
+[17:06:56] [Server thread/INFO]: Welcome gerrofu3[m
+[17:06:56] [Server thread/INFO]: gerrofu3[/127.0.0.1:50187] logged in with entity id 87 at ([world]177.09583495589837, 77.89478583070557, 271.4369040591592)
