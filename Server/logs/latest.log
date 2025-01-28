@@ -1,26 +1,25 @@
-[17:06:47] [Server thread/INFO]: Starting minecraft server version 1.12
-[17:06:47] [Server thread/INFO]: Loading properties
-[17:06:47] [Server thread/INFO]: Default game type: SURVIVAL
-[17:06:47] [Server thread/INFO]: Generating keypair
-[17:06:48] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:06:48] [Server thread/INFO]: Using default channel type
-[17:06:48] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
-[17:06:48] [Server thread/ERROR]: Ambiguous plugin name `RaspberryJuice' for files `plugins\raspberryjuice-1.12.1.jar' and `plugins\raspberryjuice-1.10.jar' in `plugins'
-[17:06:48] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.12.1
-[17:06:48] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[17:06:48] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[17:06:48] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[17:06:48] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[17:06:48] [Server thread/INFO]: Preparing level "world"
-[17:06:48] [Server thread/INFO]: Preparing start region for level 0 (Seed: 1860072845092772542)
-[17:06:49] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1860072845092772542)
-[17:06:50] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1860072845092772542)
-[17:06:50] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1
-[17:06:50] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
-[17:06:50] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
-[17:06:50] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
-[17:06:50] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[17:06:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:06:50] [Server thread/INFO]: Done (1,789s)! For help, type "help" or "?"
-[17:06:56] [Server thread/INFO]: Welcome gerrofu3[m
-[17:06:56] [Server thread/INFO]: gerrofu3[/127.0.0.1:50187] logged in with entity id 87 at ([world]177.09583495589837, 77.89478583070557, 271.4369040591592)
+[17:12:39] [Server thread/INFO]: Starting minecraft server version 1.12
+[17:12:39] [Server thread/INFO]: Loading properties
+[17:12:39] [Server thread/INFO]: Default game type: SURVIVAL
+[17:12:39] [Server thread/INFO]: Generating keypair
+[17:12:39] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:12:39] [Server thread/INFO]: Using default channel type
+[17:12:39] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[17:12:39] [Server thread/ERROR]: Ambiguous plugin name `RaspberryJuice' for files `plugins\raspberryjuice-1.12.1.jar' and `plugins\raspberryjuice-1.10.jar' in `plugins'
+[17:12:39] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.12.1
+[17:12:39] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:12:39] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:12:39] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:12:39] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:12:39] [Server thread/INFO]: Preparing level "world"
+[17:12:39] [Server thread/INFO]: Preparing start region for level 0 (Seed: 1860072845092772542)
+[17:12:40] [Server thread/INFO]: Preparing spawn area: 84%
+[17:12:40] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1860072845092772542)
+[17:12:41] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1860072845092772542)
+[17:12:41] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1
+[17:12:41] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[17:12:41] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[17:12:41] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[17:12:41] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[17:12:41] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:12:41] [Server thread/INFO]: Done (1,996s)! For help, type "help" or "?"
