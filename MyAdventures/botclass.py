@@ -1,4 +1,3 @@
-from email.policy import default
 import mcpi.minecraft as game
 import mcpi.block as blocks
 import mcpi.entity as entities
@@ -197,6 +196,11 @@ class BotManager:
             self.printLists()
             
             
+            # Usar map() con una lambda para crear las listas de bots por tipo
+            #self.tnt_bot_list = dict(map(lambda entity: (entity, TNT(entity)), self.player_list))
+            #self.chat_ai_bot_list = dict(map(lambda entity: (entity, ChatAI(entity)), self.player_list))
+            #self.insult_bot_list = dict(map(lambda entity: (entity, Insult(entity)), self.player_list))
+
     
     def get_bot_list(self, bot_type):
         """Obtiene la lista de bots del tipo especificado."""
@@ -216,3 +220,4 @@ class BotManager:
         print("TNT list = "+str(self.tnt_bot_list))
         print("GPT list = "+str(self.chat_ai_bot_list))
         print("Insult list = "+str(self.insult_bot_list))
+        

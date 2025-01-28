@@ -81,6 +81,4 @@ while(Script):
                 list(map(stop_bot, bot_list.values()))
             Script = 0  # Command to finish the execution of this program
 
-
-
 mc.postToChat("§a<MAIN> ***Ended execution of main program!!")

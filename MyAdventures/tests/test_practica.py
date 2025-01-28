@@ -1,11 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from botclass import Bot, BotManager, TNT, ChatAI, Insult
-
-
 
 class TestBots(unittest.TestCase):
     
@@ -26,6 +21,7 @@ class TestBots(unittest.TestCase):
         bot = TNT(self.player_mock)
         bot.begin()
         bot.mc.postToChat.assert_called_with("§2<TNTBot> ***The bot has been enabled for TestPlayer!!")
+        bot.stop()
 
     @patch('botclass.game.Minecraft.create')
     def test_tnt_bot_stop(self, mock_mc_create):
@@ -38,6 +34,46 @@ class TestBots(unittest.TestCase):
         bot.mc.postToChat.assert_called_with("§2<TNTBot> ***The bot has been disabled for TestPlayer!!")
 
     @patch('botclass.game.Minecraft.create')
+    def test_chatai_bot_activation(self, mock_mc_create):
+        mock_mc_create.return_value = self.mc_mock
+
+        # Crear y activar el bot
+        bot = ChatAI(self.player_mock)
+        bot.begin()
+        bot.mc.postToChat.assert_called_with("§2<ChatAI> ***The bot has been enabled for TestPlayer!!")
+        bot.stop()
+
+    @patch('botclass.game.Minecraft.create')
+    def test_chatai_bot_stop(self, mock_mc_create):
+        mock_mc_create.return_value = self.mc_mock
+
+        # Crear y detener el bot
+        bot = ChatAI(self.player_mock)
+        bot.begin()
+        bot.stop()
+        bot.mc.postToChat.assert_called_with("§2<ChatAI> ***The bot has been disabled for TestPlayer!!")
+
+    @patch('botclass.game.Minecraft.create')
+    def test_insult_bot_activation(self, mock_mc_create):
+        mock_mc_create.return_value = self.mc_mock
+
+        # Crear y activar el bot
+        bot = Insult(self.player_mock)
+        bot.begin()
+        bot.mc.postToChat.assert_called_with("§2<InsultBot> ***The bot has been enabled for TestPlayer!!")
+        bot.stop()
+
+    @patch('botclass.game.Minecraft.create')
+    def test_insult_bot_stop(self, mock_mc_create):
+        mock_mc_create.return_value = self.mc_mock
+
+        # Crear y detener el bot
+        bot = Insult(self.player_mock)
+        bot.begin()
+        bot.stop()
+        bot.mc.postToChat.assert_called_with("§2<InsultBot> ***The bot has been disabled for TestPlayer!!")
+
+    @patch('botclass.game.Minecraft.create')
     def test_bot_manager_add_player(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -46,7 +82,6 @@ class TestBots(unittest.TestCase):
 
         # Comprobar que el jugador fue agregado a la lista
         self.assertIn(self.player_mock, manager.player_list)
-
 
 class TestBotManager(unittest.TestCase):
 
@@ -64,7 +99,6 @@ class TestBotManager(unittest.TestCase):
         self.assertIn(123, manager.get_bot_list('TNT'))
         self.assertIn(123, manager.get_bot_list('ChatAI'))
         self.assertIn(123, manager.get_bot_list('Insult'))
-
 
 if __name__ == '__main__':
     unittest.main()
