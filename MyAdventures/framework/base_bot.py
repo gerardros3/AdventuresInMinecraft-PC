@@ -28,4 +28,3 @@ class Bot():
         else:
             self.mc.postToChat(f"§2<{self.name}> ***The bot is not running yet for {self.player_name}!!")
         
-        
