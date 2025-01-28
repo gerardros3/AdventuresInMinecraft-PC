@@ -1,44 +1,67 @@
-[20:39:40] [Server thread/INFO]: Loading properties
-[20:39:40] [Server thread/INFO]: Default game type: CREATIVE
-[20:39:40] [Server thread/INFO]: Generating keypair
-[20:39:40] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:39:40] [Server thread/INFO]: Using default channel type
-[20:39:40] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
-[20:39:41] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.10
-[20:39:41] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:39:41] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:39:41] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:39:41] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:39:41] [Server thread/INFO]: Preparing level "world"
-[20:39:41] [Server thread/INFO]: Preparing start region for level 0 (Seed: 4524677142864168952)
-[20:39:41] [Server thread/INFO]: Preparing start region for level 1 (Seed: 4524677142864168952)
-[20:39:42] [Server thread/INFO]: Preparing start region for level 2 (Seed: 4524677142864168952)
-[20:39:42] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.10
-[20:39:42] [Server thread/INFO]: [RaspberryJuice] Using port 4711
-[20:39:42] [Server thread/INFO]: [RaspberryJuice] Using ABSOLUTE locations
-[20:39:42] [Server thread/INFO]: [RaspberryJuice] Using BOTH clicks for hits
-[20:39:42] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[20:39:42] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:39:42] [Server thread/INFO]: Done (1,411s)! For help, type "help" or "?"
-[21:09:42] [Server thread/WARN]: The save is being accessed from another location, aborting
-[21:09:42] [Server thread/WARN]: The save is being accessed from another location, aborting
-[21:09:42] [Server thread/WARN]: The save is being accessed from another location, aborting
-[21:09:49] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
-[21:09:49] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57962.
-[21:09:49] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
-[21:09:49] [Server thread/WARN]: [RaspberryJuice] Error occured handling command
-[21:09:49] [Server thread/WARN]: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-[21:09:49] [Server thread/WARN]: 	at java.lang.AbstractStringBuilder.deleteCharAt(Unknown Source)
-[21:09:49] [Server thread/WARN]: 	at java.lang.StringBuilder.deleteCharAt(Unknown Source)
-[21:09:49] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession.handleCommand(RemoteSession.java:181)
-[21:09:49] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession.handleLine(RemoteSession.java:133)
-[21:09:49] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession.tick(RemoteSession.java:113)
-[21:09:49] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RaspberryJuicePlugin$TickHandler.run(RaspberryJuicePlugin.java:197)
-[21:09:49] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:53)
-[21:09:49] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
-[21:09:49] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:689)
-[21:09:49] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:366)
-[21:09:49] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:650)
-[21:09:49] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:554)
-[21:09:49] [Server thread/WARN]: 	at java.lang.Thread.run(Unknown Source)
-[21:09:49] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57962.
+[12:01:19] [Server thread/INFO]: Starting minecraft server version 1.12
+[12:01:19] [Server thread/INFO]: Loading properties
+[12:01:19] [Server thread/INFO]: Default game type: SURVIVAL
+[12:01:19] [Server thread/INFO]: Generating keypair
+[12:01:19] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:01:19] [Server thread/INFO]: Using default channel type
+[12:01:19] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[12:01:19] [Server thread/ERROR]: Ambiguous plugin name `RaspberryJuice' for files `plugins\raspberryjuice-1.12.1.jar' and `plugins\raspberryjuice-1.10.jar' in `plugins'
+[12:01:19] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.12.1
+[12:01:19] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[12:01:19] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[12:01:19] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[12:01:19] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[12:01:19] [Server thread/INFO]: Preparing level "world"
+[12:01:20] [Server thread/INFO]: Preparing start region for level 0 (Seed: 1860072845092772542)
+[12:01:21] [Server thread/INFO]: Preparing spawn area: 99%
+[12:01:21] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1860072845092772542)
+[12:01:21] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1860072845092772542)
+[12:01:21] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1
+[12:01:21] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[12:01:21] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[12:01:21] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[12:01:21] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[12:01:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:01:21] [Server thread/INFO]: Done (1,901s)! For help, type "help" or "?"
+[12:01:31] [Server thread/INFO]: Welcome gerrofu3[m
+[12:01:31] [Server thread/INFO]: gerrofu3[/127.0.0.1:61742] logged in with entity id 102 at ([world]179.1493738664893, 80.87669252322229, 269.39299606879365)
+[12:01:40] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:61744.
+[12:01:40] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
+[12:01:40] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
+[12:01:40] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:61745.
+[12:01:40] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
+[12:01:40] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
+[12:01:40] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:61746.
+[12:01:40] [Thread-12/INFO]: [RaspberryJuice] Starting output thread!
+[12:01:40] [Thread-11/INFO]: [RaspberryJuice] Starting input thread
+[12:01:40] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:61747.
+[12:01:40] [Thread-14/INFO]: [RaspberryJuice] Starting output thread!
+[12:01:40] [Thread-13/INFO]: [RaspberryJuice] Starting input thread
+[12:01:40] [Server thread/INFO]: [0;32;1m<MAIN> ***Main program has started!![m
+[12:02:02] [Netty Server IO #1/INFO]: <gerrofu3> :enableTNT[m
+[12:02:02] [Server thread/INFO]: [0;32;22m<TNTBot> ***The bot has been enabled for gerrofu3!![m
+[12:02:11] [Netty Server IO #1/INFO]: <gerrofu3> :enableInsult[m
+[12:02:11] [Server thread/INFO]: [0;32;22m<InsultBot> ***The bot has been enabled for gerrofu3!![m
+[12:02:13] [Netty Server IO #1/INFO]: <gerrofu3> akdjfka[m
+[12:02:13] [Server thread/INFO]: <InsultBot> You're not the brightest crayon in the box, but you're still a crayon.[m
+[12:02:24] [Netty Server IO #1/INFO]: <gerrofu3> :enableGPT[m
+[12:02:24] [Server thread/INFO]: [0;32;22m<ChatAI> ***The bot has been enabled for gerrofu3!![m
+[12:02:32] [Netty Server IO #1/INFO]: <gerrofu3> Who are the best teachers?[m
+[12:02:32] [Server thread/INFO]: <ChatBot> Usama, Pedro and Alberto[m
+[12:02:32] [Server thread/INFO]: <InsultBot> I've seen smarter rocks.[m
+[12:02:45] [Server thread/INFO]: gerrofu3 lost connection: Disconnected
+[12:02:45] [Server thread/INFO]: gerrofu3 left the game
+[12:02:51] [Server thread/WARN]: [RaspberryJuice] Error occured handling command
+[12:02:51] [Server thread/WARN]: java.lang.NullPointerException
+[12:02:51] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RaspberryJuicePlugin.getEntity(RaspberryJuicePlugin.java:190)
+[12:02:51] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession.handleCommand(RemoteSession.java:450)
+[12:02:51] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession.handleLine(RemoteSession.java:163)
+[12:02:51] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession.tick(RemoteSession.java:143)
+[12:02:51] [Server thread/WARN]: 	at net.zhuoweizhang.raspberryjuice.RaspberryJuicePlugin$TickHandler.run(RaspberryJuicePlugin.java:237)
+[12:02:51] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:53)
+[12:02:51] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
+[12:02:51] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:689)
+[12:02:51] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:366)
+[12:02:51] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:650)
+[12:02:51] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:554)
+[12:02:51] [Server thread/WARN]: 	at java.lang.Thread.run(Unknown Source)
