@@ -1,4 +1,3 @@
-from framework.read_chat import *
 from framework.base_bot import Bot
 from threading import Thread
 
@@ -29,22 +28,22 @@ class ChatBOT(Bot):
     # Function to handle GPT prompts
     def answer_question(self, question):
         answers = {
-            "What is your name?": "I am OracleBot.",
-            "What is the meaning of life?": "Beer",
+            "What is your name?": "I am ChatBOT.",
+            "What is the meaning of life?": "BipBopBap",
             "How are you?": "I am just a bot, but I am functioning properly.",
-            "What is the best programming language?": "Python",
+            "What is the best programming language?": "Java",
             "What is the best game?": "Minecraft",
-            "What is the best food?": "Pizza",
-            "What is the best color?": "Blue",
-            "What is the best animal?": "Dog",
-            "What is the best movie?": "The Matrix",
-            "What is the best book?": "The Lord of the Rings",
-            "What is the best music?": "Rock music",
-            "What is the best sport?": "Soccer",
-            "What is the best holiday?": "Christmas",
-            "What is the best season?": "Summer",
-            "What is the best weather?": "Sunny",
-            "Who are the best teachers?": "Usama, Pedro and Alberto",
+            "What is the best food?": "Sushi",
+            "What is the best color?": "Black",
+            "What is the best animal?": "Cat",
+            "What is the best movie?": "Inception",
+            "What is the best book?": "1984 by George Orwell",
+            "What is the best music?": "Classical music",
+            "What is the best sport?": "Basketball",
+            "What is the best holiday?": "New Year's Eve",
+            "What is the best season?": "Spring",
+            "What is the best weather?": "Rainy",
+            "Who are the best teachers?": "Alberto, Usama, and Pedro",
         }
         answer = answers.get(question, "I don't know the answer to that.")
         self.mc.postToChat(f"<ChatBot> {answer}")

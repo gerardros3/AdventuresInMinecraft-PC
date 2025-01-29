@@ -29,24 +29,26 @@ class Insult(Bot):
 
     # Function to handle insults
     def insult_command(self, prompt):
-        try:
+        try:           
             self.insults = [
-            "You're as bright as a black hole!",
-            "I've seen smarter rocks.",
-            "You bring everyone so much joy... when you leave the room."
-            "You're not pretty enough to be this stupid.",
-            "I'd agree with you but then we'd both be wrong.",
-            "You're so dumb, you'd think a rock was a good idea.",
-            "You're not even a good liar.",
-            "I'm not saying you're stupid, but you're not saying anything either.",
-            "You're so stupid, you'd think a toilet was a good place to take a bath.",
-            "You're not the dumbest person in the world, but you better hope they don't die.",
-            "You're so dumb, you'd trip over a wireless connection.",
-            "You're not the sharpest tool in the shed, but you're definitely a tool.",
-            "You're so dumb, you'd think a quarterback was a refund.",
-            "You're not the brightest crayon in the box, but you're still a crayon.",
-            "You're so dumb, you'd think a quarterback was a refund."
+            "You're about as sharp as a marble.",
+            "I've met goldfish with better memories.",
+            "You bring balance to the universe... by lowering the average IQ.",
+            "Beauty fades, but stupidity is forever — lucky you!",
+            "I'd agree with you, but I have a thing against being wrong.",
+            "You bring a whole new meaning to 'thinking outside the box' — because there's no box, just emptiness.",
+            "You're not even good at being bad at things.",
+            "If cluelessness were a sport, you'd be an Olympic champion.",
+            "You're so lost, even GPS can't find your common sense.",
+            "You're not the dumbest person I've met, but you're running a close second.",
+            "You're so technologically challenged, you'd try to fax a pizza.",
+            "You're about as reliable as a paper umbrella in a hurricane.",
+            "You're the kind of person who claps when the plane lands.",
+            "You're proof that even mistakes can be persistent.",
+            "You're so creative — no one else would have thought of that nonsense."
         ]
+
+
             insult = random.choice(self.insults)
             self.mc.postToChat(f"<InsultBot> {insult}")
         except Exception as e:

@@ -10,12 +10,12 @@ env/
 .idea/
 .vscode/
 
-# MacOS system files
-.DS_Store
-
 # Pytest cache
 .pytest_cache/
 
 # Logs and temporary files
 *.log
 *.tmp
+#server
+*.lock
+*.gz
