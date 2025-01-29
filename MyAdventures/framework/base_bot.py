@@ -1,30 +1,29 @@
 import mcpi.minecraft as game
 from threading import Thread
 
-# main abstract class for a bot
+# Clase base abstracta para un bot
 class Bot():
     def __init__(self, entity):
-        self.mc = game.Minecraft.create()   # minecraft game server connection
-        self.entity = entity    # player who called the function
-        self.control = None     # control variable for main loop in bot function
-        self.t1 = Thread        # declaration of a thread for the bot (needs to be updated by the specific bot)
+        self.mc = game.Minecraft.create()  # Conexión al servidor de Minecraft
+        self.entity = entity  # Jugador que llamó a la función
+        self.control = None  # Variable de control para el bucle principal de la función del bot
+        self.t1 = Thread  # Declaración de un hilo para el bot (debe ser actualizado por el bot específico)
         self.player_name = self.mc.entity.getName(self.entity)
     
-    # main function to start a thread with the bot
+    # Función principal para iniciar un hilo con el bot
     def begin(self):
-        if(not self.t1.is_alive()):
+        if not self.t1.is_alive():
             self.control = True
             self.t1.start()
-            self.mc.postToChat(f"§2<{self.name}> ***The bot has been enabled for {self.player_name}!!")
+            self.mc.postToChat(f"§2<{self.name}> El bot ha sido habilitado para {self.player_name}!")
         else:
-            self.mc.postToChat(f"§2<{self.name}> ***The bot is already running for {self.player_name}!!")
-    
-    # main function to stop the bot thread
+            self.mc.postToChat(f"§2<{self.name}> El bot ya se está ejecutando para {self.player_name}!")
+
+    # Función principal para detener el hilo del bot
     def stop(self):
-        if(self.t1.is_alive()):
+        if self.t1.is_alive():
             self.control = False
             self.t1.join()
-            self.mc.postToChat(f"§2<{self.name}> ***The bot has been disabled for {self.player_name}!!")
+            self.mc.postToChat(f"§2<{self.name}> El bot ha sido deshabilitado para {self.player_name}!")
         else:
-            self.mc.postToChat(f"§2<{self.name}> ***The bot is not running yet for {self.player_name}!!")
-        
+            self.mc.postToChat(f"§2<{self.name}> El bot no se está ejecutando aún para {self.player_name}!")

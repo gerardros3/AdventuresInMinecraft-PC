@@ -78,4 +78,4 @@ while Script:
                 Script = 0  # Salir del bucle principal
 
 
-mc.postToChat("§a<MAIN> ***Ended execution of main program!!")
+mc.postToChat("§a<MAIN> Program stopped")
