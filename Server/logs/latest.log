@@ -1,35 +1,476 @@
-[10:52:00] [Server thread/INFO]: Starting minecraft server version 1.12
-[10:52:00] [Server thread/INFO]: Loading properties
-[10:52:00] [Server thread/INFO]: Default game type: SURVIVAL
-[10:52:00] [Server thread/INFO]: Generating keypair
-[10:52:00] [Server thread/INFO]: Starting Minecraft server on *:25565
-[10:52:00] [Server thread/INFO]: Using default channel type
-[10:52:02] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
-[10:52:02] [Server thread/ERROR]: Ambiguous plugin name `RaspberryJuice' for files `plugins\raspberryjuice-1.12.1.jar' and `plugins\raspberryjuice-1.10.jar' in `plugins'
-[10:52:02] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.12.1
-[10:52:02] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[10:52:02] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[10:52:02] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[10:52:02] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[10:52:02] [Server thread/INFO]: Preparing level "world"
-[10:52:03] [Server thread/INFO]: Preparing start region for level 0 (Seed: 1860072845092772542)
-[10:52:04] [Server thread/INFO]: Preparing spawn area: 24%
-[10:52:05] [Server thread/INFO]: Preparing spawn area: 77%
-[10:52:05] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1860072845092772542)
-[10:52:06] [Server thread/INFO]: Preparing spawn area: 80%
-[10:52:06] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1860072845092772542)
-[10:52:06] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1
-[10:52:06] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
-[10:52:06] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
-[10:52:06] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
-[10:52:06] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[10:52:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[10:52:07] [Server thread/INFO]: Done (4,509s)! For help, type "help" or "?"
-[10:53:02] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:5996.
-[10:53:02] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
-[10:53:02] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
-[10:53:02] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:5997.
-[10:53:02] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
-[10:53:02] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
-[10:53:03] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:5996.
-[10:53:03] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:5997.
+[15:00:21] [Server thread/INFO]: Starting minecraft server version 1.12
+[15:00:21] [Server thread/INFO]: Loading properties
+[15:00:21] [Server thread/INFO]: Default game type: SURVIVAL
+[15:00:21] [Server thread/INFO]: Generating keypair
+[15:00:21] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:00:21] [Server thread/INFO]: Using default channel type
+[15:00:21] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[15:00:21] [Server thread/ERROR]: Ambiguous plugin name `RaspberryJuice' for files `plugins\raspberryjuice-1.12.1.jar' and `plugins\raspberryjuice-1.10.jar' in `plugins'
+[15:00:21] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.12.1
+[15:00:21] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:00:21] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[15:00:21] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15:00:21] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:00:21] [Server thread/INFO]: Preparing level "world"
+[15:00:21] [Server thread/INFO]: Preparing start region for level 0 (Seed: 1860072845092772542)
+[15:00:22] [Server thread/INFO]: Preparing start region for level 1 (Seed: 1860072845092772542)
+[15:00:23] [Server thread/INFO]: Preparing start region for level 2 (Seed: 1860072845092772542)
+[15:00:23] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1
+[15:00:23] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[15:00:23] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[15:00:23] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[15:00:23] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[15:00:23] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:00:23] [Server thread/INFO]: Done (1,516s)! For help, type "help" or "?"
+[15:00:27] [Server thread/INFO]: Welcome gerrofu3[m
+[15:00:27] [Server thread/INFO]: gerrofu3[/127.0.0.1:56952] logged in with entity id 84 at ([world]177.09583495589837, 82.40324347095728, 271.4369040591592)
+[15:00:32] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
+[15:00:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:56954.
+[15:00:32] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
+[15:00:33] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:56955.
+[15:00:33] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
+[15:00:33] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
+[15:00:33] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:56956.
+[15:00:33] [Thread-11/INFO]: [RaspberryJuice] Starting input thread
+[15:00:33] [Thread-12/INFO]: [RaspberryJuice] Starting output thread!
+[15:00:33] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:56957.
+[15:00:33] [Thread-13/INFO]: [RaspberryJuice] Starting input thread
+[15:00:33] [Thread-14/INFO]: [RaspberryJuice] Starting output thread!
+[15:00:33] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:00:37] [Netty Server IO #1/INFO]: <gerrofu3> :enableTNT[m
+[15:00:42] [Server thread/INFO]: gerrofu3 lost connection: Disconnected
+[15:00:42] [Server thread/INFO]: gerrofu3 left the game
+[15:00:42] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:56954.
+[15:00:42] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:56955.
+[15:00:42] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:56956.
+[15:00:42] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:56957.
+[15:12:42] [Server thread/INFO]: Welcome gerrofu3[m
+[15:12:42] [Server thread/INFO]: gerrofu3[/127.0.0.1:57147] logged in with entity id 92 at ([world]177.09583495589837, 82.40324347095728, 271.4369040591592)
+[15:12:47] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57149.
+[15:12:47] [Thread-16/INFO]: [RaspberryJuice] Starting output thread!
+[15:12:47] [Thread-15/INFO]: [RaspberryJuice] Starting input thread
+[15:12:47] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57150.
+[15:12:47] [Thread-18/INFO]: [RaspberryJuice] Starting output thread!
+[15:12:47] [Thread-17/INFO]: [RaspberryJuice] Starting input thread
+[15:12:47] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57151.
+[15:12:47] [Thread-19/INFO]: [RaspberryJuice] Starting input thread
+[15:12:47] [Thread-20/INFO]: [RaspberryJuice] Starting output thread!
+[15:12:47] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57152.
+[15:12:47] [Thread-21/INFO]: [RaspberryJuice] Starting input thread
+[15:12:47] [Thread-22/INFO]: [RaspberryJuice] Starting output thread!
+[15:12:47] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:13:04] [Netty Server IO #3/INFO]: <gerrofu3> :enableTNT[m
+[15:14:56] [Thread-21/INFO]: [RaspberryJuice] Connection reset
+[15:14:56] [Thread-17/INFO]: [RaspberryJuice] Connection reset
+[15:14:56] [Thread-15/INFO]: [RaspberryJuice] Connection reset
+[15:14:56] [Thread-19/INFO]: [RaspberryJuice] Connection reset
+[15:14:56] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57149.
+[15:14:56] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57150.
+[15:14:56] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57151.
+[15:14:56] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57152.
+[15:14:56] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57183.
+[15:14:56] [Thread-23/INFO]: [RaspberryJuice] Starting input thread
+[15:14:56] [Thread-24/INFO]: [RaspberryJuice] Starting output thread!
+[15:14:56] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57184.
+[15:14:56] [Thread-26/INFO]: [RaspberryJuice] Starting output thread!
+[15:14:56] [Thread-25/INFO]: [RaspberryJuice] Starting input thread
+[15:14:56] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57185.
+[15:14:56] [Thread-27/INFO]: [RaspberryJuice] Starting input thread
+[15:14:56] [Thread-28/INFO]: [RaspberryJuice] Starting output thread!
+[15:14:56] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57186.
+[15:14:56] [Thread-29/INFO]: [RaspberryJuice] Starting input thread
+[15:14:56] [Thread-30/INFO]: [RaspberryJuice] Starting output thread!
+[15:14:57] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:15:01] [Netty Server IO #3/INFO]: <gerrofu3> :enableTNT[m
+[15:15:01] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido habilitado para gerrofu3![m
+[15:15:14] [Netty Server IO #3/INFO]: <gerrofu3> :disableTNT[m
+[15:15:14] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:15:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57183.
+[15:15:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57184.
+[15:15:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57185.
+[15:15:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57186.
+[15:15:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57193.
+[15:15:39] [Thread-31/INFO]: [RaspberryJuice] Starting input thread
+[15:15:39] [Thread-32/INFO]: [RaspberryJuice] Starting output thread!
+[15:15:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57194.
+[15:15:39] [Thread-34/INFO]: [RaspberryJuice] Starting output thread!
+[15:15:39] [Thread-33/INFO]: [RaspberryJuice] Starting input thread
+[15:15:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57195.
+[15:15:39] [Thread-35/INFO]: [RaspberryJuice] Starting input thread
+[15:15:39] [Thread-36/INFO]: [RaspberryJuice] Starting output thread!
+[15:15:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57196.
+[15:15:39] [Thread-37/INFO]: [RaspberryJuice] Starting input thread
+[15:15:39] [Thread-38/INFO]: [RaspberryJuice] Starting output thread!
+[15:15:39] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:15:47] [Netty Server IO #3/INFO]: <gerrofu3> :enableTNT[m
+[15:15:48] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido habilitado para gerrofu3![m
+[15:15:54] [Netty Server IO #3/INFO]: <gerrofu3> :edisableTNT[m
+[15:16:00] [Netty Server IO #3/INFO]: <gerrofu3> :disableTNT[m
+[15:16:00] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:16:00] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57193.
+[15:16:00] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57194.
+[15:16:00] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57195.
+[15:16:00] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57196.
+[15:16:09] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:16:43] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57211.
+[15:16:43] [Thread-39/INFO]: [RaspberryJuice] Starting input thread
+[15:16:43] [Thread-40/INFO]: [RaspberryJuice] Starting output thread!
+[15:16:43] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57212.
+[15:16:43] [Thread-41/INFO]: [RaspberryJuice] Starting input thread
+[15:16:43] [Thread-42/INFO]: [RaspberryJuice] Starting output thread!
+[15:16:43] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57213.
+[15:16:43] [Thread-43/INFO]: [RaspberryJuice] Starting input thread
+[15:16:43] [Thread-44/INFO]: [RaspberryJuice] Starting output thread!
+[15:16:43] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57214.
+[15:16:43] [Thread-45/INFO]: [RaspberryJuice] Starting input thread
+[15:16:43] [Thread-46/INFO]: [RaspberryJuice] Starting output thread!
+[15:16:43] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:16:53] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:16:53] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido habilitado para gerrofu3![m
+[15:16:56] [Netty Server IO #3/INFO]: <gerrofu3> fdsfsd[m
+[15:16:56] [Server thread/INFO]: <InsultBot> You're not the dumbest person I've met, but you're running a close second.[m
+[15:17:02] [Netty Server IO #3/INFO]: <gerrofu3> :disableInsult[m
+[15:17:02] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:17:02] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57211.
+[15:17:02] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57212.
+[15:17:02] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57213.
+[15:17:02] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57214.
+[15:17:17] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:21:43] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57267.
+[15:21:43] [Thread-47/INFO]: [RaspberryJuice] Starting input thread
+[15:21:43] [Thread-48/INFO]: [RaspberryJuice] Starting output thread!
+[15:21:43] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57268.
+[15:21:43] [Thread-49/INFO]: [RaspberryJuice] Starting input thread
+[15:21:43] [Thread-50/INFO]: [RaspberryJuice] Starting output thread!
+[15:21:43] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57269.
+[15:21:43] [Thread-52/INFO]: [RaspberryJuice] Starting output thread!
+[15:21:43] [Thread-51/INFO]: [RaspberryJuice] Starting input thread
+[15:21:43] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57270.
+[15:21:43] [Thread-53/INFO]: [RaspberryJuice] Starting input thread
+[15:21:43] [Thread-54/INFO]: [RaspberryJuice] Starting output thread!
+[15:21:44] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:22:01] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:22:01] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido habilitado para gerrofu3![m
+[15:22:08] [Netty Server IO #3/INFO]: <gerrofu3> hkdffhj[m
+[15:22:08] [Server thread/INFO]: <InsultBot> You're so technologically challenged, you'd try to fax a pizza.[m
+[15:22:16] [Netty Server IO #3/INFO]: <gerrofu3> :disableInsult[m
+[15:22:16] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:22:17] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57270.
+[15:22:25] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:22:25] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57267.
+[15:22:25] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57268.
+[15:22:25] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57269.
+[15:23:34] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57286.
+[15:23:34] [Thread-55/INFO]: [RaspberryJuice] Starting input thread
+[15:23:34] [Thread-56/INFO]: [RaspberryJuice] Starting output thread!
+[15:23:34] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57287.
+[15:23:34] [Thread-58/INFO]: [RaspberryJuice] Starting output thread!
+[15:23:34] [Thread-57/INFO]: [RaspberryJuice] Starting input thread
+[15:23:35] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57288.
+[15:23:35] [Thread-59/INFO]: [RaspberryJuice] Starting input thread
+[15:23:35] [Thread-60/INFO]: [RaspberryJuice] Starting output thread!
+[15:23:35] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57289.
+[15:23:35] [Thread-62/INFO]: [RaspberryJuice] Starting output thread!
+[15:23:35] [Thread-61/INFO]: [RaspberryJuice] Starting input thread
+[15:23:35] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:23:41] [Netty Server IO #3/INFO]: <gerrofu3> :enableGPT[m
+[15:23:41] [Server thread/INFO]: [0;32;22m<ChatBOT> El bot ha sido habilitado para gerrofu3![m
+[15:23:45] [Netty Server IO #3/INFO]: <gerrofu3> How are you?[m
+[15:23:45] [Server thread/INFO]: <ChatBot> I am just a bot, but I am functioning properly.[m
+[15:24:01] [Netty Server IO #3/INFO]: <gerrofu3> :disableGPT[m
+[15:24:01] [Server thread/INFO]: [0;32;22m<ChatBOT> El bot ha sido deshabilitado para gerrofu3![m
+[15:24:01] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57288.
+[15:24:07] [Netty Server IO #3/INFO]: <gerrofu3> :enableGPT[m
+[15:24:07] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57286.
+[15:24:07] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57287.
+[15:24:07] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57289.
+[15:30:34] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57449.
+[15:30:34] [Thread-64/INFO]: [RaspberryJuice] Starting output thread!
+[15:30:34] [Thread-63/INFO]: [RaspberryJuice] Starting input thread
+[15:30:34] [Thread-66/INFO]: [RaspberryJuice] Starting output thread!
+[15:30:34] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57450.
+[15:30:34] [Thread-65/INFO]: [RaspberryJuice] Starting input thread
+[15:30:34] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57451.
+[15:30:34] [Thread-68/INFO]: [RaspberryJuice] Starting output thread!
+[15:30:34] [Thread-67/INFO]: [RaspberryJuice] Starting input thread
+[15:30:34] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57452.
+[15:30:34] [Thread-69/INFO]: [RaspberryJuice] Starting input thread
+[15:30:34] [Thread-70/INFO]: [RaspberryJuice] Starting output thread!
+[15:30:34] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:30:47] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:30:49] [Netty Server IO #3/INFO]: <gerrofu3> masfd[m
+[15:31:08] [Thread-65/INFO]: [RaspberryJuice] Connection reset
+[15:31:08] [Thread-63/INFO]: [RaspberryJuice] Connection reset
+[15:31:08] [Thread-67/INFO]: [RaspberryJuice] Connection reset
+[15:31:08] [Thread-69/INFO]: [RaspberryJuice] Connection reset
+[15:31:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57449.
+[15:31:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57450.
+[15:31:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57451.
+[15:31:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57452.
+[15:31:08] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57457.
+[15:31:08] [Thread-71/INFO]: [RaspberryJuice] Starting input thread
+[15:31:08] [Thread-72/INFO]: [RaspberryJuice] Starting output thread!
+[15:31:08] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57458.
+[15:31:08] [Thread-74/INFO]: [RaspberryJuice] Starting output thread!
+[15:31:08] [Thread-73/INFO]: [RaspberryJuice] Starting input thread
+[15:31:08] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57459.
+[15:31:08] [Thread-75/INFO]: [RaspberryJuice] Starting input thread
+[15:31:08] [Thread-76/INFO]: [RaspberryJuice] Starting output thread!
+[15:31:08] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57460.
+[15:31:08] [Thread-77/INFO]: [RaspberryJuice] Starting input thread
+[15:31:08] [Thread-78/INFO]: [RaspberryJuice] Starting output thread!
+[15:31:08] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:31:13] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:31:13] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido habilitado para gerrofu3![m
+[15:31:16] [Netty Server IO #3/INFO]: <gerrofu3> e[m
+[15:31:16] [Server thread/INFO]: <InsultBot> You're the kind of person who claps when the plane lands.[m
+[15:31:23] [Netty Server IO #3/INFO]: <gerrofu3> :disableInsult[m
+[15:31:24] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:31:24] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57457.
+[15:31:24] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57458.
+[15:31:24] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57459.
+[15:31:24] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57460.
+[15:31:30] [Netty Server IO #3/INFO]: <gerrofu3> :enableGPT[m
+[15:37:11] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57525.
+[15:37:11] [Thread-80/INFO]: [RaspberryJuice] Starting output thread!
+[15:37:11] [Thread-79/INFO]: [RaspberryJuice] Starting input thread
+[15:37:11] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57525.
+[15:38:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57545.
+[15:38:39] [Thread-82/INFO]: [RaspberryJuice] Starting output thread!
+[15:38:39] [Thread-81/INFO]: [RaspberryJuice] Starting input thread
+[15:38:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57546.
+[15:38:39] [Thread-83/INFO]: [RaspberryJuice] Starting input thread
+[15:38:39] [Thread-84/INFO]: [RaspberryJuice] Starting output thread!
+[15:38:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57547.
+[15:38:39] [Thread-86/INFO]: [RaspberryJuice] Starting output thread!
+[15:38:39] [Thread-85/INFO]: [RaspberryJuice] Starting input thread
+[15:38:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57548.
+[15:38:39] [Thread-87/INFO]: [RaspberryJuice] Starting input thread
+[15:38:39] [Thread-88/INFO]: [RaspberryJuice] Starting output thread!
+[15:38:39] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:38:48] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:38:48] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido habilitado para gerrofu3![m
+[15:38:51] [Netty Server IO #3/INFO]: <gerrofu3> ajfk[m
+[15:38:51] [Server thread/INFO]: <InsultBot> You're not the dumbest person I've met, but you're running a close second.[m
+[15:38:55] [Netty Server IO #3/INFO]: <gerrofu3> :disableInsult[m
+[15:38:55] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:38:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57545.
+[15:38:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57546.
+[15:38:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57547.
+[15:38:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57548.
+[15:39:37] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57573.
+[15:39:37] [Thread-89/INFO]: [RaspberryJuice] Starting input thread
+[15:39:37] [Thread-90/INFO]: [RaspberryJuice] Starting output thread!
+[15:39:38] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57574.
+[15:39:38] [Thread-91/INFO]: [RaspberryJuice] Starting input thread
+[15:39:38] [Thread-92/INFO]: [RaspberryJuice] Starting output thread!
+[15:39:38] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57575.
+[15:39:38] [Thread-93/INFO]: [RaspberryJuice] Starting input thread
+[15:39:38] [Thread-94/INFO]: [RaspberryJuice] Starting output thread!
+[15:39:38] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57576.
+[15:39:38] [Thread-96/INFO]: [RaspberryJuice] Starting output thread!
+[15:39:38] [Thread-95/INFO]: [RaspberryJuice] Starting input thread
+[15:39:38] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:39:44] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:39:44] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido habilitado para gerrofu3![m
+[15:39:46] [Netty Server IO #3/INFO]: <gerrofu3> :disableInsult[m
+[15:39:47] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:39:47] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57576.
+[15:39:57] [Netty Server IO #3/INFO]: <gerrofu3> dfks[m
+[15:40:01] [Netty Server IO #3/INFO]: <gerrofu3> :enableGPT[m
+[15:40:01] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57573.
+[15:40:01] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57574.
+[15:40:01] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57575.
+[15:40:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57645.
+[15:40:16] [Thread-98/INFO]: [RaspberryJuice] Starting output thread!
+[15:40:16] [Thread-97/INFO]: [RaspberryJuice] Starting input thread
+[15:40:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57646.
+[15:40:16] [Thread-100/INFO]: [RaspberryJuice] Starting output thread!
+[15:40:16] [Thread-99/INFO]: [RaspberryJuice] Starting input thread
+[15:40:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57647.
+[15:40:16] [Thread-102/INFO]: [RaspberryJuice] Starting output thread!
+[15:40:16] [Thread-101/INFO]: [RaspberryJuice] Starting input thread
+[15:40:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57648.
+[15:40:16] [Thread-103/INFO]: [RaspberryJuice] Starting input thread
+[15:40:16] [Thread-104/INFO]: [RaspberryJuice] Starting output thread!
+[15:40:16] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:40:21] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:40:21] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido habilitado para gerrofu3![m
+[15:40:23] [Netty Server IO #3/INFO]: <gerrofu3> dkfls[m
+[15:40:23] [Server thread/INFO]: <InsultBot> I'd agree with you, but I have a thing against being wrong.[m
+[15:40:26] [Netty Server IO #3/INFO]: <gerrofu3> :disableInsult[m
+[15:40:26] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:40:26] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57648.
+[15:40:43] [Netty Server IO #3/INFO]: <gerrofu3> :enableGPT[m
+[15:40:43] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57645.
+[15:40:43] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57646.
+[15:40:43] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57647.
+[15:41:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57670.
+[15:41:32] [Thread-106/INFO]: [RaspberryJuice] Starting output thread!
+[15:41:32] [Thread-105/INFO]: [RaspberryJuice] Starting input thread
+[15:41:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57671.
+[15:41:32] [Thread-107/INFO]: [RaspberryJuice] Starting input thread
+[15:41:32] [Thread-108/INFO]: [RaspberryJuice] Starting output thread!
+[15:41:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57672.
+[15:41:32] [Thread-109/INFO]: [RaspberryJuice] Starting input thread
+[15:41:32] [Thread-110/INFO]: [RaspberryJuice] Starting output thread!
+[15:41:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57673.
+[15:41:32] [Thread-111/INFO]: [RaspberryJuice] Starting input thread
+[15:41:32] [Thread-112/INFO]: [RaspberryJuice] Starting output thread!
+[15:41:32] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:41:36] [Netty Server IO #3/INFO]: <gerrofu3> :enableGPT[m
+[15:41:37] [Server thread/INFO]: [0;32;22m<ChatBOT> El bot ha sido habilitado para gerrofu3![m
+[15:41:41] [Netty Server IO #3/INFO]: <gerrofu3> How are you?[m
+[15:41:41] [Server thread/INFO]: <ChatBot> I am just a bot, but I am functioning properly.[m
+[15:41:46] [Netty Server IO #3/INFO]: <gerrofu3> :disableGPT[m
+[15:41:46] [Server thread/INFO]: [0;32;22m<ChatBOT> El bot ha sido deshabilitado para gerrofu3![m
+[15:41:46] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57672.
+[15:41:52] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:41:52] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido habilitado para gerrofu3![m
+[15:41:52] [Server thread/INFO]: <InsultBot> You're about as sharp as a marble.[m
+[15:42:00] [Netty Server IO #3/INFO]: <gerrofu3> dkjf[m
+[15:42:01] [Server thread/INFO]: <InsultBot> You bring balance to the universe... by lowering the average IQ.[m
+[15:42:10] [Netty Server IO #3/INFO]: <gerrofu3> :disableIsult[m
+[15:42:13] [Netty Server IO #3/INFO]: <gerrofu3> :disableInsult[m
+[15:42:14] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:42:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57673.
+[15:42:20] [Netty Server IO #3/INFO]: <gerrofu3> :enableTNT[m
+[15:42:20] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido habilitado para gerrofu3![m
+[15:42:28] [Netty Server IO #3/INFO]: <gerrofu3> :disableTNT[m
+[15:42:28] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:42:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57671.
+[15:42:39] [Netty Server IO #3/INFO]: <gerrofu3> :endProgram[m
+[15:42:39] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57670.
+[15:43:22] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57705.
+[15:43:22] [Thread-113/INFO]: [RaspberryJuice] Starting input thread
+[15:43:22] [Thread-114/INFO]: [RaspberryJuice] Starting output thread!
+[15:43:22] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57706.
+[15:43:22] [Thread-115/INFO]: [RaspberryJuice] Starting input thread
+[15:43:22] [Thread-116/INFO]: [RaspberryJuice] Starting output thread!
+[15:43:23] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57707.
+[15:43:23] [Thread-117/INFO]: [RaspberryJuice] Starting input thread
+[15:43:23] [Thread-118/INFO]: [RaspberryJuice] Starting output thread!
+[15:43:23] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57708.
+[15:43:23] [Thread-120/INFO]: [RaspberryJuice] Starting output thread!
+[15:43:23] [Thread-119/INFO]: [RaspberryJuice] Starting input thread
+[15:43:23] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:43:28] [Netty Server IO #3/INFO]: <gerrofu3> :endProgram[m
+[15:43:28] [Server thread/INFO]: [0;32;22m<TNTBot> El bot no se está ejecutando aún para gerrofu3![m
+[15:43:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57705.
+[15:43:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57706.
+[15:43:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57707.
+[15:43:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57708.
+[15:43:37] [Netty Server IO #3/INFO]: <gerrofu3> :enableGPT[m
+[15:43:49] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57714.
+[15:43:49] [Thread-122/INFO]: [RaspberryJuice] Starting output thread!
+[15:43:49] [Thread-121/INFO]: [RaspberryJuice] Starting input thread
+[15:43:49] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57715.
+[15:43:49] [Thread-124/INFO]: [RaspberryJuice] Starting output thread!
+[15:43:49] [Thread-123/INFO]: [RaspberryJuice] Starting input thread
+[15:43:49] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57716.
+[15:43:49] [Thread-126/INFO]: [RaspberryJuice] Starting output thread!
+[15:43:49] [Thread-125/INFO]: [RaspberryJuice] Starting input thread
+[15:43:49] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57717.
+[15:43:49] [Thread-127/INFO]: [RaspberryJuice] Starting input thread
+[15:43:49] [Thread-128/INFO]: [RaspberryJuice] Starting output thread!
+[15:43:49] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:43:52] [Netty Server IO #3/INFO]: <gerrofu3> :enableGPT[m
+[15:43:52] [Server thread/INFO]: [0;32;22m<ChatBOT> El bot ha sido habilitado para gerrofu3![m
+[15:44:04] [Netty Server IO #3/INFO]: <gerrofu3> :enableTNT[m
+[15:44:04] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido habilitado para gerrofu3![m
+[15:44:13] [Netty Server IO #3/INFO]: <gerrofu3> How are you?[m
+[15:44:13] [Server thread/INFO]: <ChatBot> I am just a bot, but I am functioning properly.[m
+[15:44:20] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:44:20] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido habilitado para gerrofu3![m
+[15:44:20] [Server thread/INFO]: <InsultBot> I've met goldfish with better memories.[m
+[15:44:31] [Netty Server IO #3/INFO]: <gerrofu3> Who are the best teachers?[m
+[15:44:31] [Server thread/INFO]: <ChatBot> Alberto, Usama, and Pedro[m
+[15:44:31] [Server thread/INFO]: <InsultBot> You're so lost, even GPS can't find your common sense.[m
+[15:44:38] [Netty Server IO #3/INFO]: <gerrofu3> :endProgram[m
+[15:44:38] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:44:59] [Netty Server IO #3/INFO]: <gerrofu3> :endProgram[m
+[15:45:15] [Thread-121/INFO]: [RaspberryJuice] Connection reset
+[15:45:15] [Thread-125/INFO]: [RaspberryJuice] Connection reset
+[15:45:15] [Thread-123/INFO]: [RaspberryJuice] Connection reset
+[15:45:15] [Thread-127/INFO]: [RaspberryJuice] Connection reset
+[15:45:15] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57714.
+[15:45:15] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57715.
+[15:45:15] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57716.
+[15:45:15] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57717.
+[15:45:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57740.
+[15:45:16] [Thread-129/INFO]: [RaspberryJuice] Starting input thread
+[15:45:16] [Thread-130/INFO]: [RaspberryJuice] Starting output thread!
+[15:45:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57741.
+[15:45:16] [Thread-132/INFO]: [RaspberryJuice] Starting output thread!
+[15:45:16] [Thread-131/INFO]: [RaspberryJuice] Starting input thread
+[15:45:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57742.
+[15:45:16] [Thread-134/INFO]: [RaspberryJuice] Starting output thread!
+[15:45:16] [Thread-133/INFO]: [RaspberryJuice] Starting input thread
+[15:45:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57743.
+[15:45:16] [Thread-135/INFO]: [RaspberryJuice] Starting input thread
+[15:45:16] [Thread-136/INFO]: [RaspberryJuice] Starting output thread!
+[15:45:16] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:45:23] [Netty Server IO #3/INFO]: <gerrofu3> :enableInsult[m
+[15:45:23] [Server thread/INFO]: [0;32;22m<InsultBot> El bot ha sido habilitado para gerrofu3![m
+[15:45:26] [Netty Server IO #3/INFO]: <gerrofu3> fds[m
+[15:45:26] [Server thread/INFO]: <InsultBot> I'd agree with you, but I have a thing against being wrong.[m
+[15:45:30] [Netty Server IO #3/INFO]: <gerrofu3> :endProgram[m
+[15:45:30] [Server thread/INFO]: [0;32;1m<MAIN> Main program finished!![m
+[15:45:30] [Server thread/INFO]: [0;32;22m<TNTBot> El bot no se está ejecutando aún para gerrofu3![m
+[15:46:18] [Thread-131/INFO]: [RaspberryJuice] Connection reset
+[15:46:18] [Thread-133/INFO]: [RaspberryJuice] Connection reset
+[15:46:18] [Thread-129/INFO]: [RaspberryJuice] Connection reset
+[15:46:18] [Thread-135/INFO]: [RaspberryJuice] Connection reset
+[15:46:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57740.
+[15:46:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57741.
+[15:46:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57742.
+[15:46:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57743.
+[15:46:18] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57756.
+[15:46:18] [Thread-138/INFO]: [RaspberryJuice] Starting output thread!
+[15:46:18] [Thread-137/INFO]: [RaspberryJuice] Starting input thread
+[15:46:19] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57757.
+[15:46:19] [Thread-139/INFO]: [RaspberryJuice] Starting input thread
+[15:46:19] [Thread-140/INFO]: [RaspberryJuice] Starting output thread!
+[15:46:19] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57758.
+[15:46:19] [Thread-141/INFO]: [RaspberryJuice] Starting input thread
+[15:46:19] [Thread-142/INFO]: [RaspberryJuice] Starting output thread!
+[15:46:19] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57759.
+[15:46:19] [Thread-143/INFO]: [RaspberryJuice] Starting input thread
+[15:46:19] [Thread-144/INFO]: [RaspberryJuice] Starting output thread!
+[15:46:19] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:46:23] [Netty Server IO #3/INFO]: <gerrofu3> :enableTNT[m
+[15:46:23] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido habilitado para gerrofu3![m
+[15:46:32] [Netty Server IO #3/INFO]: <gerrofu3> :endProgram[m
+[15:46:32] [Server thread/INFO]: [0;32;1m<MAIN> Main program finished!![m
+[15:46:32] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:46:32] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57756.
+[15:46:32] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57757.
+[15:46:32] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57758.
+[15:46:32] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57759.
+[15:46:55] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57767.
+[15:46:55] [Thread-146/INFO]: [RaspberryJuice] Starting output thread!
+[15:46:55] [Thread-145/INFO]: [RaspberryJuice] Starting input thread
+[15:46:55] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57768.
+[15:46:55] [Thread-148/INFO]: [RaspberryJuice] Starting output thread!
+[15:46:55] [Thread-147/INFO]: [RaspberryJuice] Starting input thread
+[15:46:55] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57769.
+[15:46:55] [Thread-149/INFO]: [RaspberryJuice] Starting input thread
+[15:46:55] [Thread-150/INFO]: [RaspberryJuice] Starting output thread!
+[15:46:55] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57770.
+[15:46:55] [Thread-152/INFO]: [RaspberryJuice] Starting output thread!
+[15:46:55] [Thread-151/INFO]: [RaspberryJuice] Starting input thread
+[15:46:55] [Server thread/INFO]: [0;32;1m<MAIN> Main program is running!![m
+[15:47:01] [Netty Server IO #3/INFO]: <gerrofu3> :enableTNT[m
+[15:47:01] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido habilitado para gerrofu3![m
+[15:47:08] [Netty Server IO #3/INFO]: <gerrofu3> :endProgram[m
+[15:47:08] [Server thread/INFO]: [0;32;1m<MAIN> Main program finished!![m
+[15:47:09] [Server thread/INFO]: [0;32;1m<MAIN> Program stopped[m
+[15:47:09] [Server thread/INFO]: [0;32;22m<TNTBot> El bot ha sido deshabilitado para gerrofu3![m
+[15:47:09] [Server thread/INFO]: [0;32;22m<ChatBOT> El bot no se está ejecutando aún para gerrofu3![m
+[15:47:09] [Server thread/INFO]: [0;32;22m<InsultBot> El bot no se está ejecutando aún para gerrofu3![m
+[15:47:09] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57767.
+[15:47:09] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57768.
+[15:47:09] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57769.
+[15:47:09] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57770.
+[15:47:24] [Server thread/INFO]: gerrofu3 lost connection: Disconnected
+[15:47:24] [Server thread/INFO]: gerrofu3 left the game

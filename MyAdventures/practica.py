@@ -25,11 +25,11 @@ def disableBot(player, bot_type):
     bot_list[player].stop()
     del bot_list[player]
     if bot_type == 'TNT'.casefold():
-        bot_list[player] = TNT(player)
+        bot_list[player] = TNT
     elif bot_type == 'ChatBOT'.casefold():
-        bot_list[player] = ChatBOT(player)
+        bot_list[player] = ChatBOT
     elif bot_type == 'Insult'.casefold():
-        bot_list[player] = Insult(player)
+        bot_list[player] = Insult
 
 
 # Actualización inicial
@@ -40,42 +40,46 @@ bot_manager.printLists()
 
 mc.postToChat("§a<MAIN> Main program is running!!")
 
-# Diccionario para comandos y funciones correspondientes
-command_map = {
-    ":enableTNT": lambda player: enableBot(player, 'TNT'),
-    ":disableTNT": lambda player: disableBot(player, 'TNT'),
-    ":enableGPT": lambda player: enableBot(player, 'chatBOT'),
-    ":disableGPT": lambda player: disableBot(player, 'chatBOT'),
-    ":enableInsult": lambda player: enableBot(player, 'Insult'),
-    ":disableInsult": lambda player: disableBot(player, 'Insult'),
-    ":endProgram": None  # Control especial para terminar el script
-}
-
 # Bucle principal
-while Script:
+while(Script):
     bot_manager.update_player_list(mc)
     
-    # Leer eventos de chat
+    # Read chat to see if anyone used a custom command
     chatEvents = mc.events.pollChatPosts()
-
-    for command in chatEvents:
-        text = str(command.message).casefold()  # Convierte una vez a minúsculas
-        if not text.startswith(":"):
+    
+    for command in chatEvents:  
+        text = str(command.message) # Convert chat event to str
+        if(not text.startswith(":")):   # Skip if it doesn't start with ":"
             continue
+        
+        player = command.entityId   # Else, register what player sent the command
+        
+        # Check what command was executed (ignore case)
+        if (text.casefold() == ":enableTNT".casefold()):
+            enableBot(player, 'TNT'.casefold())
+            
+        elif (text.casefold() == ":disableTNT".casefold()):
+            disableBot(player, 'TNT'.casefold())
+            
+        elif (text.casefold() == ":enableGPT".casefold()):
+            enableBot(player, 'ChatBOT'.casefold())
+            
+        elif (text.casefold() == ":disableGPT".casefold()):
+            disableBot(player, 'ChatBOT'.casefold())
 
-        player = command.entityId
-
-        # Ejecutar comando si está en el mapa
-        if text in command_map:
-            action = command_map[text]
-            if action:
-                action(player)
-            else:  # Comando especial ":endProgram"
-                for bot_type in ['tnt', 'chatbot', 'insult']:
-                    bot_list = bot_manager.get_bot_list(bot_type)
-                    for bot in bot_list.values():
-                        stop_bot(bot)
-                Script = 0  # Salir del bucle principal
+        elif (text.casefold() == ":enableInsult".casefold()):
+            enableBot(player, 'Insult'.casefold())
+            
+        elif (text.casefold() == ":disableInsult".casefold()):
+            disableBot(player, 'Insult'.casefold())
+            
+        elif (text.casefold() == ":endProgram".casefold()):
+            mc.postToChat("§a<MAIN> Main program finished!!")
+            # Detener todos los bots y terminar el programa
+            for bot_type in ['TNT'.casefold(), 'ChatBOT'.casefold(), 'Insult'.casefold()]:
+                bot_list = bot_manager.get_bot_list(bot_type)
+                list(map(stop_bot, bot_list.values()))
+            Script = 0  # Command to finish the execution of this program
 
 
 mc.postToChat("§a<MAIN> Program stopped")

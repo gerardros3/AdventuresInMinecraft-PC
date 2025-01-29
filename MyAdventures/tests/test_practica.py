@@ -23,10 +23,10 @@ class TestBots(unittest.TestCase):
         # Crear y activar el bot
         bot = TNT(self.player_mock)
         bot.begin()
-        bot.mc.postToChat.assert_called_with("§2<TNTBot> ***The bot has been enabled for TestPlayer!!")
+        bot.mc.postToChat.assert_called_with("§2<TNTBot> El bot ha sido habilitado para TestPlayer!")
         bot.stop()
 
-    @patch('framwork.base_bot.game.Minecraft.create')
+    @patch('framework.base_bot.game.Minecraft.create')
     def test_tnt_bot_stop(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -34,19 +34,19 @@ class TestBots(unittest.TestCase):
         bot = TNT(self.player_mock)
         bot.begin()
         bot.stop()
-        bot.mc.postToChat.assert_called_with("§2<TNTBot> ***The bot has been disabled for TestPlayer!!")
+        bot.mc.postToChat.assert_called_with("§2<TNTBot> El bot ha sido deshabilitado para TestPlayer!")
 
-    @patch('base_bot.game.Minecraft.create')
+    @patch('framework.base_bot.game.Minecraft.create')
     def test_ChatBOT_bot_activation(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
         # Crear y activar el bot
         bot = ChatBOT(self.player_mock)
         bot.begin()
-        bot.mc.postToChat.assert_called_with("§2<ChatBOT> ***The bot has been enabled for TestPlayer!!")
+        bot.mc.postToChat.assert_called_with("§2<ChatBOT> El bot ha sido habilitado para TestPlayer!")
         bot.stop()
 
-    @patch('base_bot.game.Minecraft.create')
+    @patch('framework.base_bot.game.Minecraft.create')
     def test_ChatBOT_bot_stop(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -54,19 +54,19 @@ class TestBots(unittest.TestCase):
         bot = ChatBOT(self.player_mock)
         bot.begin()
         bot.stop()
-        bot.mc.postToChat.assert_called_with("§2<ChatBOT> ***The bot has been disabled for TestPlayer!!")
+        bot.mc.postToChat.assert_called_with("§2<ChatBOT> El bot ha sido deshabilitado para TestPlayer!")
 
-    @patch('base_bot.game.Minecraft.create')
+    @patch('framework.base_bot.game.Minecraft.create')
     def test_insult_bot_activation(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
         # Crear y activar el bot
         bot = Insult(self.player_mock)
         bot.begin()
-        bot.mc.postToChat.assert_called_with("§2<InsultBot> ***The bot has been enabled for TestPlayer!!")
+        bot.mc.postToChat.assert_called_with("§2<InsultBot> El bot ha sido habilitado para TestPlayer!")
         bot.stop()
 
-    @patch('base_bot.game.Minecraft.create')
+    @patch('framework.base_bot.game.Minecraft.create')
     def test_insult_bot_stop(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -74,9 +74,9 @@ class TestBots(unittest.TestCase):
         bot = Insult(self.player_mock)
         bot.begin()
         bot.stop()
-        bot.mc.postToChat.assert_called_with("§2<InsultBot> ***The bot has been disabled for TestPlayer!!")
+        bot.mc.postToChat.assert_called_with("§2<InsultBot> El bot ha sido deshabilitado para TestPlayer!")
 
-    @patch('base_bot.game.Minecraft.create')
+    @patch('framework.base_bot.game.Minecraft.create')
     def test_bot_manager_add_player(self, mock_mc_create):
         mock_mc_create.return_value = self.mc_mock
 
@@ -88,7 +88,7 @@ class TestBots(unittest.TestCase):
 
 class TestBotManager(unittest.TestCase):
 
-    @patch('base_bot.game.Minecraft.create')
+    @patch('framework.base_bot.game.Minecraft.create')
     def test_bot_manager_get_bot_list(self, mock_mc_create):
         mock_mc_create.return_value = MagicMock()
         manager = BotManager.getInstance()

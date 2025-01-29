@@ -24,9 +24,10 @@ class bot_manager:
     
 
     def update_player_list(self, mc):
-        newList = mc.getPlayerEntityIds()
-        if len(newList) > len(self.player_list):
-            diff = list(set(newList).difference(self.player_list))
+        """Actualiza las listas de jugadores y bots para cada jugador."""
+        new_player_list = mc.getPlayerEntityIds()
+        if len(new_player_list) > len(self.player_list):
+            diff = list(set(new_player_list).difference(self.player_list))
             self.player_list.extend(diff)
             for player in diff:
                 self.tnt_bot_list[player] = tnt(player)
@@ -34,9 +35,9 @@ class bot_manager:
                 self.insult_bot_list[player] = Insult(player)
             self.printLists()
         
-        elif len(newList) < len(self.player_list):
-            diff = list(set(self.player_list).difference(newList))
-            self.player_list = newList
+        elif len(new_player_list) < len(self.player_list):
+            diff = list(set(self.player_list).difference(new_player_list))
+            self.player_list = new_player_list  #[x for x in self.player_list if x in new_player_list]
             for player in diff:
                 self.tnt_bot_list[player].stop()
                 del self.tnt_bot_list[player]
@@ -48,8 +49,16 @@ class bot_manager:
                 del self.insult_bot_list[player]
             self.printLists()
             
-   
-    def get_bot_list(self, bot_type):     
+            
+            # Usar map() con una lambda para crear las listas de bots por tipo
+            #self.tnt_bot_list = dict(map(lambda entity: (entity, TNT(entity)), self.player_list))
+            #self.chat_ai_bot_list = dict(map(lambda entity: (entity, ChatBOT(entity)), self.player_list))
+            #self.insult_bot_list = dict(map(lambda entity: (entity, Insult(entity)), self.player_list))
+
+    
+    def get_bot_list(self, bot_type):
+        """Obtiene la lista de bots del tipo especificado."""
+        
         print(f"Received bot type: {bot_type}")
         switcher = {
             'TNT'.casefold(): self.tnt_bot_list,
