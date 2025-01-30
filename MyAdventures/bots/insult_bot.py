@@ -40,10 +40,8 @@ class Insult(Bot):
             for command in chatEvents:
                 text = str(command.message)  # Convertir el mensaje del chat a cadena
                 sender_entity_id = command.entityId  # Obtener el ID del jugador que envió el mensaje
-                if sender_entity_id == self.bot_entity_id:
-                    continue  # Evitar que el bot se insulte a sí mismo
-                
-                if not text.startswith(":") and not text.startswith("<"):  # Filtrar mensajes que no son comandos o interacciones
+
+                if not text.startswith(":") and not text.startswith("<") and sender_entity_id != self.bot_entity_id:  # Filtrar mensajes que no son comandos o interacciones
                     self.insult_command("Generar insultos para el jugador: " + self.player_name)  # Llamar a la función para generar un insulto
 
     # Función para generar un insulto

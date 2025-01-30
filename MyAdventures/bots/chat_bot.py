@@ -17,11 +17,8 @@ class ChatBOT(Bot):
             chatEvents = self.mc.events.pollChatPosts()
         
             for command in chatEvents:
-                text = str(command.message) # Convert chat event to str
-                sender_entity_id = command.entityId
-                if sender_entity_id == self.bot_entity_id:
-                    continue
-                    
+                text = str(command.message) # Convert chat event to string
+
                 if text.endswith("?"):
                     self.answer_question(text)
 

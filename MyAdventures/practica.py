@@ -79,6 +79,7 @@ while(Script):
             for bot_type in ['TNT'.casefold(), 'ChatBOT'.casefold(), 'Insult'.casefold()]:
                 bot_list = bot_manager.get_bot_list(bot_type)
                 list(map(stop_bot, bot_list.values()))
+                
             Script = 0  # Command to finish the execution of this program
 
 
